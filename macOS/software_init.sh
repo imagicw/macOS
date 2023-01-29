@@ -10,7 +10,7 @@ case $confirm in
 
   *)
     echo "\n退出软件包安装"
-    exit
+    exit 0
     ;;
 esac;
 
@@ -25,6 +25,9 @@ brew install iterm2 --cask
 brew install iina --cask
 brew install handbrake --cask
 
+# CLI 工具
+brew install yt-dlp
+
 # 效率类
 brew install mimestream --cask
 brew install notion --cask
@@ -38,6 +41,7 @@ brew install discord --cask
 # brew install loopback
 # brew install audio-hijack
 # brew install jq
+
 
 read -s -n1 -p "即将安装 Mac app store 中的应用，请确保 Apple ID 已经登录。按任意键继续..."
 
