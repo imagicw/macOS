@@ -39,6 +39,6 @@ select model in "${models[@]}"; do
       ;;
 
     *)
-    echo "输入无效";;
+    echo "输入无效 $REPLY";;
   esac
 done
