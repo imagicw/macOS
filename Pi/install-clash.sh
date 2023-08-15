@@ -6,18 +6,23 @@ install_clash() {
 
   sudo wget https://release.dreamacro.workers.dev/latest/$1
 
-  echo '----------------------------------------'
-  echo '>>> unzip file <<<'
+  if [-e $1]; then
+    echo '----------------------------------------'
+    echo '>>> unzip file <<<'
 
-  gunzip clash-linux-armv7-latest.gz
+    gunzip $1
 
-  echo '>>> moving file <<<'
+    echo '>>> moving file <<<'
 
-  sudo mv clash-linux-armv7-latest /usr/local/bin/clash
+    sudo mv clash-linux-*-latest /usr/local/bin/clash
 
-  sudo chmod +x /usr/local/bin/clash
+    sudo chmod +x /usr/local/bin/clash
 
-  echo '>>> finished <<<'
+    echo '>>> finished <<<'
+  else
+    echo '>>> cannot find file <<<'
+  fi
+
   exit
 }
 
