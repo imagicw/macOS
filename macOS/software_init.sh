@@ -27,6 +27,8 @@ echo 'Homebrew 安装完成！	\n开始安装软件包...'
 brew install --cask iterm2
 brew install --cask iina
 brew install --cask handbrake
+brew install --cask arc
+brew install --cask raindropio
 
 # CLI 工具
 brew install yt-dlp
@@ -37,6 +39,7 @@ brew install --cask notion
 brew install --cask visual-studio-code
 brew install --cask raycast
 brew install --cask input-source-pro
+
 
 # IM
 brew install --cask telegram
