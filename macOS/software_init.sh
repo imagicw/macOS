@@ -23,12 +23,15 @@ echo "正在安装 Homebrew..."
 
 echo 'Homebrew 安装完成！	\n开始安装软件包...'
 
+brew analytics off # 关闭分析
+
 # 工具类
 brew install --cask iterm2
 brew install --cask iina
 brew install --cask handbrake
-brew install --cask arc
+# brew install --cask arc
 brew install --cask raindropio
+brew install --cask motrix
 
 # CLI 工具
 brew install yt-dlp
@@ -36,14 +39,16 @@ brew install yt-dlp
 # 效率类
 # brew install --cask mimestream
 brew install --cask notion
+brew install --cask obsidian
 brew install --cask visual-studio-code
 brew install --cask raycast
 brew install --cask input-source-pro
 
-
 # IM
-brew install --cask telegram
 brew install --cask discord
+
+# 音频类
+brew install blackhole-16ch
 
 # brew install loopback
 # brew install audio-hijack
@@ -57,6 +62,8 @@ brew install mas
 
 echo 'mas 安装完成！ \n开始安装 mas 软件...'
 mas install 1176895641 # Spark
+mas install 946399090 # Telegram Lite
+mas install 425424353 # The unarchiver
 
 echo "软件安装完成！"
 
