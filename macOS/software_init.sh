@@ -43,6 +43,8 @@ brew install --cask obsidian
 brew install --cask visual-studio-code
 brew install --cask raycast
 brew install --cask input-source-pro
+brew install --cask alt-tab
+brew install --cask imageoptim
 
 # IM
 brew install --cask discord
